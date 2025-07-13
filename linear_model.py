@@ -44,7 +44,7 @@ y = np.c_[country_stats["Life satisfaction"]]
 country_stats.plot(kind='scatter', x="GDP per capita", y='Life satisfaction')
 plt.show()
 # Select a linear model
-model = sklearn.neighbors.KNeighborsRegressor(n_neighbors=3)
+model = sklearn.linear_model.LinearRegression()
 # Train the model
 model.fit(X, y)
 # Make a prediction for Cyprus
